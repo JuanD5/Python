@@ -120,3 +120,32 @@ max_subarray(nums = [-2,1,-3,4,-1,2,1,-5,4])
 
 # Time complexity O(n)
 # Space complexity O(1)
+
+#%%
+import collections
+def check_if_equal_2(list_1, list_2):
+    """ Check if both the lists are of same length and then get the frequency
+    of each element in list using collections.Counter. Then Compare if both the Counter
+    objects are equal or not to confirm if lists contain similar elements with same frequency"""
+    if len(list_1) != len(list_2):
+        return False
+    return collections.Counter(list_1) == collections.Counter(list_2)
+first_list = [10, 10, 11, 12, 12, 13, 14, 16, 15, 16, 12]
+sec_list = [16, 12, 13, 14, 15, 16, 10, 11, 12, 10, 12]
+if check_if_equal_2(first_list, sec_list):
+    print('Lists are equal i.e. contain similar elements with same frequency')
+else:
+    print('Lists are not equal')
+    
+#%%
+
+import collections
+
+first_list = [10, 10, 11, 12, 12, 13, 14, 16, 15, 16, 12]
+dic_a = collections.Counter(first_list)
+print(dic_a[12])
+
+
+#%%
+
+def vacations()
