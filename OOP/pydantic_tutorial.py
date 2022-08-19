@@ -78,11 +78,11 @@ class Book(pydantic.BaseModel):
 
         allow_mutation = False
         anystr_lower = True
+    
 
 
 def main() -> None:
     """Main function."""
-
     # Read data from a JSON file
     with open("./files/data.json") as file:
         data = json.load(file)
