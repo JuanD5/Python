@@ -1,0 +1,2 @@
+2022-08-30 13:12:56,583 INFO     [loging_script.py:6] Hello
+2022-08-30 13:12:56,583 WARNING  [loging_script.py:7] Stoppp
